@@ -65,17 +65,107 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
                 physics: BouncingScrollPhysics(),
                 controller: pageViewController,
                 children: [
-                  Container(
-                    width: double.infinity,
-                    color: Colors.red,
+                  Column(
+                    // mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Expanded(
+                          child: Container(
+                        child: Image.network(
+                            "https://cdn3d.iconscout.com/3d/premium/thumb/donation-3311970-2764522.png"),
+                      )),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Text(
+                          "We Are In A Mission To Help the Helpless",
+                          textScaleFactor: 2.25,
+                          style: GoogleFonts.poppins(
+                            color: Color(0xFF3B3B5D),
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16, vertical: 8),
+                        child: Text(
+                          "When people aren't looking for help in times of need, they're always interested in self improvement.",
+                          textScaleFactor: 1.25,
+                          style: GoogleFonts.poppins(
+                            color: Color(0xFF9EA0AF),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 50),
+                    ],
                   ),
-                  Container(
-                    width: double.infinity,
-                    color: Colors.green,
+                  Column(
+                    // mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Expanded(
+                          child: Container(
+                        child: Image.network(
+                            "https://cdn3d.iconscout.com/3d/premium/thumb/deal-done-3311983-2764534.png"),
+                      )),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Text(
+                          "We Are In A Mission To Help the Helpless",
+                          textScaleFactor: 2.25,
+                          style: GoogleFonts.poppins(
+                            color: Color(0xFF3B3B5D),
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16, vertical: 8),
+                        child: Text(
+                          "When people aren't looking for help in times of need, they're always interested in self improvement.",
+                          textScaleFactor: 1.25,
+                          style: GoogleFonts.poppins(
+                            color: Color(0xFF9EA0AF),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 50),
+                    ],
                   ),
-                  Container(
-                    width: double.infinity,
-                    color: Colors.blue,
+                  Column(
+                    // mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Expanded(
+                          child: Container(
+                        child: Image.network(
+                            "https://cdn3d.iconscout.com/3d/premium/thumb/heart-hand-gesture-3311973-2764511.png"),
+                      )),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Text(
+                          "We Are In A Mission To Help the Helpless",
+                          textScaleFactor: 2.25,
+                          style: GoogleFonts.poppins(
+                            color: Color(0xFF3B3B5D),
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16, vertical: 8),
+                        child: Text(
+                          "When people aren't looking for help in times of need, they're always interested in self improvement.",
+                          textScaleFactor: 1.25,
+                          style: GoogleFonts.poppins(
+                            color: Color(0xFF9EA0AF),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 50),
+                    ],
                   ),
                 ],
                 onPageChanged: (value) {
