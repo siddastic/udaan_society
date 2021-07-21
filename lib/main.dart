@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udaan_society/screens/tabs/home.dart';
 import 'package:udaan_society/screens/walkthrough.dart';
 
 void main() {

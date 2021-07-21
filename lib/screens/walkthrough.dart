@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:udaan_society/screens/tabs/home.dart';
 import 'package:udaan_society/widgets/raised_gradient_button.dart';
 
 class WalkthroughScreen extends StatefulWidget {
@@ -186,12 +187,19 @@ class _WalkthroughScreenState extends State<WalkthroughScreen> {
                   width: 180,
                   height: 55,
                   onPressed: () {
-                    print(pageViewController.page);
-                    pageViewController.animateToPage(
-                      _selectedPageViewIndex + 1,
-                      duration: Duration(milliseconds: 250),
-                      curve: Curves.ease,
-                    );
+                    if (_selectedPageViewIndex != 2) {
+                      print(pageViewController.page);
+                      pageViewController.animateToPage(
+                        _selectedPageViewIndex + 1,
+                        duration: Duration(milliseconds: 250),
+                        curve: Curves.ease,
+                      );
+                    } else {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomeTab()),
+                      );
+                    }
                   },
                   showIcon: _selectedPageViewIndex != 2,
                   icon: Icon(
